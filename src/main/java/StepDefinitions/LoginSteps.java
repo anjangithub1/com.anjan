@@ -46,12 +46,10 @@ public class LoginSteps {
 	@Then("^user navigate to  home page$")
 	public void user_navigate_to_home_page() {
 
-		try {
+		
 			driver.findElement(By.xpath("//button[@id='logout']")).isDisplayed();
-			System.out.println("User login application sucessfully");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+			System.out.println("kantha login application sucessfully");
+		
 		
 	}
 	@Then("^Close the browser$")
