@@ -9,10 +9,47 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">BDD Test Suite</th></tr>
-<tr><td><a href="#t0">My Testng Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">17,093</td><td></td><td></td></tr>
+<tr><td><a href="#t0">My Testng Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,298</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">BDD Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">My Testng Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">MyRunner.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1678963206310</td><td rowspan="1">16512</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">BDD Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">My Testng Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">MyRunner.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1679031564067</td><td rowspan="1">653</td></tr></tbody>
 </table>
-<h2>My Testng Test</h2><h3 id="m0">MyRunner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Login functionality feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>My Testng Test</h2><h3 id="m0">MyRunner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Login functionality feature</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.ExceptionInInitializerError
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at MyRunner.TestRunner.feature(TestRunner.java:33)
+Caused by: java.lang.ExceptionInInitializerError
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.&lt;init&gt;(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.&lt;init&gt;(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.&lt;init&gt;(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at MyRunner.TestRunner.feature(TestRunner.java:33)
+	at ✽.Given user is already on Login Page(Login.feature:5)
+	at cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)
+	at cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.&lt;clinit&gt;(TreeMapConverter.java:50)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.&lt;init&gt;(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.&lt;init&gt;(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.&lt;init&gt;(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at MyRunner.TestRunner.feature(TestRunner.java:33)
+... Removed 80 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

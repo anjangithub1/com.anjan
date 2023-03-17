@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-BDD_Test_Suite">
-              <span class="suite-name border-passed">BDD Test Suite</span>
+            <a href="#" panel-name="suite-BDD_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">BDD Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-BDD_Test_Suite">
-                    <span>D:\myBDD\com.anjan\testng.xml</span>
+                  <a href="#" panel-name="test-xml-BDD_Test_Suite" class="navigator-link ">
+                    <span>E:\udhayrepo\com.anjan\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-BDD_Test_Suite">
+                  <a href="#" panel-name="testlist-BDD_Test_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-BDD_Test_Suite">
+                  <a href="#" panel-name="group-BDD_Test_Suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-BDD_Test_Suite">
+                  <a href="#" panel-name="times-BDD_Test_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-BDD_Test_Suite">
+                  <a href="#" panel-name="reporter-BDD_Test_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-BDD_Test_Suite">
+                  <a href="#" panel-name="ignored-methods-BDD_Test_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-BDD_Test_Suite">
+                  <a href="#" panel-name="chronological-BDD_Test_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-BDD_Test_Suite" class="hide-methods passed suite-BDD_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-BDD_Test_Suite -->
-                      <a href="#" panel-name="suite-BDD_Test_Suite" class="show-methods passed suite-BDD_Test_Suite"> (show)</a> <!-- show-methods passed suite-BDD_Test_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BDD_Test_Suite" class="hide-methods failed suite-BDD_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-BDD_Test_Suite -->
+                      <a href="#" panel-name="suite-BDD_Test_Suite" class="show-methods failed suite-BDD_Test_Suite"> (show)</a> <!-- show-methods failed suite-BDD_Test_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-BDD_Test_Suite">
+                    <div class="method-list-content failed suite-BDD_Test_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="MyRunner.TestRunner" hash-for-method="feature(Login functionality feature)">feature(Login functionality feature)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDD_Test_Suite" title="MyRunner.TestRunner" class="method navigator-link" hash-for-method="feature(Login functionality feature)">feature(Login functionality feature)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-BDD_Test_Suite -->
+                    </div> <!-- method-list-content failed suite-BDD_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-BDD_Test_Suite" class="panel BDD_Test_Suite">
-          <div class="suite-BDD_Test_Suite-class-passed">
+          <div class="suite-BDD_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">MyRunner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,22 +129,61 @@
                   </a> <!-- feature(Login functionality feature) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Login functionality feature)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.ExceptionInInitializerError
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at MyRunner.TestRunner.feature(TestRunner.java:33)
+Caused by: java.lang.ExceptionInInitializerError
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.&lt;init&gt;(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.&lt;init&gt;(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.&lt;init&gt;(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at MyRunner.TestRunner.feature(TestRunner.java:33)
+	at ✽.Given user is already on Login Page(Login.feature:5)
+	at cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)
+	at cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.&lt;clinit&gt;(TreeMapConverter.java:50)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.&lt;init&gt;(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.&lt;init&gt;(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.&lt;init&gt;(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at MyRunner.TestRunner.feature(TestRunner.java:33)
+... Removed 80 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BDD_Test_Suite-class-passed -->
+          </div> <!-- suite-BDD_Test_Suite-class-failed -->
         </div> <!-- panel BDD_Test_Suite -->
         <div panel-name="test-xml-BDD_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\myBDD\com.anjan\testng.xml</span>
+            <span class="header-content">E:\udhayrepo\com.anjan\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;BDD Test Suite&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; name=&quot;BDD Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;My Testng Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;MyRunner.TestRunner&quot;/&gt;
@@ -199,12 +238,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'MyRunner.TestRunner')
-data.setCell(0, 3, 16512);
+data.setCell(0, 3, 653);
 window.suiteTableData['BDD_Test_Suite']= { tableData: data, tableDiv: 'times-div-BDD_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 653 ms</span>
               <div id="times-div-BDD_Test_Suite">
               </div> <!-- times-div-BDD_Test_Suite -->
             </div> <!-- times-div -->
@@ -236,12 +275,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">feature(Login functionality feature)</span>
-                <span class="method-start">515 ms</span>
+                <span class="method-start">560 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">17033 ms</span>
+                <span class="method-start">1226 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
